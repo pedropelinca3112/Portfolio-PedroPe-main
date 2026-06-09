@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pedro Pelinca | Estudante de Back-End</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+    
+  <canvas id="bgCanvas"></canvas>
+
+  <header class="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo"><PedroPelinca /></a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul class="nav__list" id="navList">
+        <li><a href="index.html" class="nav__link active">Home</a></li>
+        <li><a href="projects.html" class="nav__link">Estudos</a></li>
+        <li><a href="contact.html" class="nav__link">Contato</a></li>
+        <li>
+          <a href="https://github.com/pedropelinca3112" target="_blank" class="nav__link nav__link--icon">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/in/pedro-pelinca-a230653b0" target="_blank" class="nav__link nav__link--icon">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero" id="hero">
+      <div class="container hero__grid">
+
+        <div class="hero__content">
+          <span class="hero__tag">👋 Olá, eu sou</span>
+          <h1 class="hero__title">Pedro Pelinca</h1>
+          <h2 class="hero__subtitle">Estudante de Back-End</h2>
+          <p class="hero__description">
+            Estudante da Cesar School, em Recife, focado em aprender desenvolvimento back-end do zero.
+            Estou construindo minha base em lógica, APIs e bancos de dados, buscando
+            minha primeira oportunidade como desenvolvedor.
+          </p>
+
+          <div class="hero__badges">
+            <span class="badge">Cesar School</span>
+            <span class="badge">Estudante de Back-End</span>
+            <span class="badge">Estudando Node.js</span>
+            <span class="badge">Estudando SQL</span>
+          </div>
+
+          <div class="hero__actions">
+            <a href="projects.html" class="btn btn--primary">Ver meu plano de estudos</a>
+            <a href="contact.html" class="btn btn--outline">Fale comigo</a>
+          </div>
+
+          <div class="hero__socials">
+            <a href="https://github.com/pedropelinca3112" target="_blank" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/pedro-pelinca-a230653b0" target="_blank" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__avatar">
+          <div class="avatar__ring">
+            <img src="img/pedro-pelinca.png" alt="Foto de perfil de Pedro Pelinca" class="avatar__img">
+          </div>
+
+          <div class="terminal">
+            <div class="terminal__bar">
+              <span class="dot dot--red"></span>
+              <span class="dot dot--yellow"></span>
+              <span class="dot dot--green"></span>
+              <span class="terminal__title">bash</span>
+            </div>
+            <div class="terminal__body">
+              <p><span class="t-green">~/recife</span> <span class="t-white">whoami</span></p>
+              <p class="t-gray">pedro_pelinca</p>
+              <p><span class="t-green">~/recife</span> <span class="t-white">cat objetivo.txt</span></p>
+              <p class="t-gray">primeiro estágio em back-end</p>
+              <p><span class="t-green">~/recife</span> <span class="t-white">git status</span></p>
+              <p class="t-yellow">aprendendo todos os dias...</p>
+              <p class="cursor">█</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="about" id="sobre">
+      <div class="container">
+        <h2 class="section__title">Sobre mim</h2>
+        <div class="about__grid">
+
+          <div class="about__text">
+            <p>
+              Me chamo Pedro Pelinca, sou de Recife (PE) e estudo na Cesar School, em uma trilha voltada
+              para desenvolvimento de software. Estou começando minha jornada no Back-End, construindo
+              a base em lógica de programação, HTTP, APIs e bancos de dados.
+            </p>
+            <p>
+              Ainda não tenho projetos grandes prontos, mas estou praticando com exercícios,
+              mini aplicações e pequenos desafios para ganhar experiência e confiança.
+            </p>
+            <p>
+              Meu objetivo é conseguir minha primeira oportunidade na área, seja estágio,
+              trainee ou vaga júnior, em um time onde eu possa aprender e evoluir junto.
+            </p>
+          </div>
+
+          <div class="about__stats">
+            <div class="stat__card">
+              <span class="stat__number" data-target="6">0</span>
+              <span class="stat__label">Meses estudando back-end</span>
+            </div>
+            <div class="stat__card">
+              <span class="stat__number" data-target="15">0</span>
+              <span class="stat__label">Exercícios e mini práticas</span>
+            </div>
+            <div class="stat__card">
+              <span class="stat__number" data-target="4">0</span>
+              <span class="stat__label">Tecnologias em aprendizado</span>
+            </div>
+            <div class="stat__card">
+              <span class="stat__number" data-target="2">0</span>
+              <span class="stat__label">Cursos em andamento</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- O QUE ESTOU ESTUDANDO -->
+    <section class="featured" id="estudando">
+      <div class="container">
+        <h2 class="section__title">O que estou estudando</h2>
+        <p class="section__subtitle">Conteúdos e práticas que estou focando agora</p>
+
+        <div class="projects__grid">
+
+          <article class="project__card">
+            <div class="project__header">
+              <i class="fa-solid fa-book-open"></i>
+            </div>
+            <h3 class="project__title">Lógica & Algoritmos</h3>
+            <p class="project__desc">
+              Praticando variáveis, condicionais, laços e funções com exercícios simples
+              para criar uma base sólida de raciocínio lógico.
+            </p>
+            <div class="project__tech">
+              <span>Python</span><span>Exercícios</span>
+            </div>
+          </article>
+
+          <article class="project__card project__card--featured">
+            <div class="project__header">
+              <i class="fa-solid fa-network-wired"></i>
+            </div>
+            <h3 class="project__title">Introdução a APIs</h3>
+            <p class="project__desc">
+              Estudando HTTP, rotas e requisições usando pequenos exemplos de APIs,
+              mesmo que ainda sem um projeto completo em produção.
+            </p>
+            <div class="project__tech">
+              <span>HTTP</span><span>REST</span>
+            </div>
+          </article>
+
+          <article class="project__card">
+            <div class="project__header">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <h3 class="project__title">Fundamentos de SQL</h3>
+            <p class="project__desc">
+              Treinando consultas básicas (SELECT, INSERT, UPDATE, DELETE) e entendendo
+              como tabelas se relacionam em um banco relacional.
+            </p>
+            <div class="project__tech">
+              <span>SQL</span><span>PostgreSQL</span>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="featured__cta">
+          <a href="projects.html" class="btn btn--outline">Ver meu plano de projetos →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>Feito em Recife com <i class="fa-solid fa-heart"></i> por <strong>Pedro Pelinca</strong></p>
+      <div class="footer__links">
+        <a href="https://github.com/pedropelinca3112" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/pedro-pelinca-a230653b0" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/particles.js"></script>
+</body>
+</html>

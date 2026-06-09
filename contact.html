@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato | Pedro Pelinca</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+    <canvas id="bgCanvas"></canvas>
+
+  <header class="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo"><PedroPelinca /></a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul class="nav__list" id="navList">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="projects.html" class="nav__link">Estudos</a></li>
+        <li><a href="contact.html" class="nav__link active">Contato</a></li>
+        <li>
+          <a href="https://github.com/pedropelinca3112" target="_blank" class="nav__link nav__link--icon">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/in/pedro-pelinca-a230653b0" target="_blank" class="nav__link nav__link--icon">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="page-hero__title">Vamos conversar?</h1>
+        <p class="page-hero__desc">
+          Sou o Pedro, de Recife, e estou começando na área de back-end.
+          Estou aberto a oportunidades de estágio, trainee, projetos simples
+          e também conversas sobre tecnologia.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact-page">
+      <div class="container contact-page__grid">
+
+        <!-- SIDEBAR -->
+        <aside class="contact-side">
+
+          <div class="contact-side__block">
+            <h2 class="section__title">Me encontre</h2>
+            <ul class="contact__list">
+              <li>
+                <i class="fa-brands fa-github"></i>
+                <a href="https://github.com/pedropelinca3112" target="_blank">github.com/pedropelinca3112</a>
+              </li>
+              <li>
+                <i class="fa-brands fa-linkedin"></i>
+                <a href="https://linkedin.com/in/pedro-pelinca-a230653b0" target="_blank">Pedro Pelinca</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:pedropelinca31@gmail.com">pedropelinca31@gmail.com</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Recife, PE — Brasil</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact-side__block">
+            <h3>Aberto para</h3>
+            <ul class="open-for">
+              <li><i class="fa-solid fa-circle-check"></i> Estágio em desenvolvimento</li>
+              <li><i class="fa-solid fa-circle-check"></i> Programas de trainee</li>
+              <li><i class="fa-solid fa-circle-check"></i> Projetos colaborativos</li>
+              <li><i class="fa-solid fa-circle-check"></i> Networking e bate-papo sobre back-end</li>
+            </ul>
+          </div>
+
+          <div class="contact-side__block availability">
+            <div class="availability__dot"></div>
+            <p>Disponível para oportunidades</p>
+          </div>
+
+        </aside>
+
+        <!-- FORMULÁRIO COM FORMSUBMIT -->
+        <div class="contact-form__wrapper">
+          <h2 class="section__title">Envie uma mensagem</h2>
+          <p class="contact-form__subtitle">Prometo responder assim que possível.</p>
+
+          <!--
+            FormSubmit.co — sem backend necessário.
+            Primeiro envio vai pedir confirmação no e-mail do Pedro.
+            Depois disso funciona normalmente.
+          -->
+          <form
+            class="contact__form contact__form--full"
+            id="contactForm"
+            action="https://formsubmit.co/teste@gmail.com"
+            method="POST"
+            novalidate
+          >
+            <!-- Configurações do FormSubmit -->
+            <input type="hidden" name="_subject"  value="Nova mensagem do portfólio — Pedro Pelinca" />
+            <input type="hidden" name="_captcha"  value="false" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_next"     value="obrigado.html" />
+            <!-- Honeypot anti-spam -->
+            <input type="text"   name="_honey"    style="display:none" />
+
+            <div class="form__row">
+              <div class="form__group">
+                <label for="name">Nome <span class="required">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Seu nome completo" required />
+                <span class="form__error" id="nameError"></span>
+              </div>
+              <div class="form__group">
+                <label for="email">E-mail <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+                <span class="form__error" id="emailError"></span>
+              </div>
+            </div>
+
+            <div class="form__group">
+              <label for="subject">Assunto <span class="required">*</span></label>
+              <select id="subject" name="assunto" required>
+                <option value="">Selecione um assunto...</option>
+                <option value="Proposta de estágio">Proposta de estágio</option>
+                <option value="Programa trainee">Programa trainee</option>
+                <option value="Projeto colaborativo">Projeto colaborativo</option>
+                <option value="Networking / mentoria">Networking / mentoria</option>
+                <option value="Outro">Outro</option>
+              </select>
+              <span class="form__error" id="subjectError"></span>
+            </div>
+
+            <div class="form__group">
+              <label for="message">Mensagem <span class="required">*</span></label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Conte um pouco mais sobre o que você tem em mente..."
+                required
+              ></textarea>
+              <span class="form__error" id="messageError"></span>
+              <span class="char__counter" id="charCounter">0 / 500</span>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Enviar mensagem</span>
+            </button>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+      <div class="container">
+        <h2 class="section__title">Dúvidas rápidas</h2>
+
+        <div class="faq__grid">
+
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span>Você já trabalha na área?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq__answer">
+              <p>Ainda não. Estou começando e busco minha primeira oportunidade como estagiário ou júnior.</p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span>Você tem disponibilidade para trabalho remoto?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq__answer">
+              <p>Sim, tenho disponibilidade para remoto e também para oportunidades presenciais em Recife e região.</p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span>Quais tecnologias está estudando?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq__answer">
+              <p>No momento estou focando em lógica de programação, fundamentos de back-end, Node.js e SQL.</p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span>Você já tem projetos no GitHub?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq__answer">
+              <p>
+                Ainda não tenho projetos grandes, mas pretendo começar a publicar exercícios e
+                primeiros CRUDs em
+                <a href="https://github.com/pedropelinca3112" target="_blank">github.com/pedropelinca3112</a>.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>Feito em Recife com <i class="fa-solid fa-heart"></i> por <strong>Pedro Pelinca</strong></p>
+      <div class="footer__links">
+        <a href="https://github.com/pedropelinca3112" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/pedro-pelinca-a230653b0" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/particles.js"></script>
+</body>
+</html>

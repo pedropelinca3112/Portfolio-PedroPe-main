@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estudos & Planos | Pedro Pelinca</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+    
+    <canvas id="bgCanvas"></canvas>
+    
+  <header class="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo"><PedroPelinca /></a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul class="nav__list" id="navList">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="projects.html" class="nav__link active">Estudos</a></li>
+        <li><a href="contact.html" class="nav__link">Contato</a></li>
+        <li>
+          <a href="https://github.com/pedropelinca3112" target="_blank" class="nav__link nav__link--icon">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/in/pedro-pelinca-a230653b0" target="_blank" class="nav__link nav__link--icon">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="page-hero__title">Estudos & Planos de Projetos</h1>
+        <p class="page-hero__desc">
+          Ainda não tenho projetos prontos publicados, mas aqui está a minha jornada:
+          o que já estudei, o que estou estudando agora e os projetos que pretendo construir.
+        </p>
+      </div>
+    </section>
+
+    <!-- ROADMAP -->
+    <section class="roadmap">
+      <div class="container">
+        <h2 class="section__title">Linha do tempo de estudos</h2>
+        <p class="section__subtitle">Etapas que já passei e próximos passos</p>
+
+        <div class="roadmap__list">
+
+          <div class="roadmap__item roadmap__item--done">
+            <div class="roadmap__icon"><i class="fa-solid fa-check"></i></div>
+            <div class="roadmap__content">
+              <span class="roadmap__status roadmap__status--done">Concluído</span>
+              <h3>Primeiro contato com programação</h3>
+              <p>Cursos introdutórios e vídeos sobre lógica de programação e pensamento computacional.</p>
+              <div class="roadmap__tags">
+                <span class="badge">Lógica</span>
+                <span class="badge">Algoritmos</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="roadmap__item roadmap__item--done">
+            <div class="roadmap__icon"><i class="fa-solid fa-check"></i></div>
+            <div class="roadmap__content">
+              <span class="roadmap__status roadmap__status--done">Concluído</span>
+              <h3>Noções de Python</h3>
+              <p>Estudos básicos de sintaxe, estruturas de controle e funções, com exercícios simples.</p>
+              <div class="roadmap__tags">
+                <span class="badge">Python</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="roadmap__item roadmap__item--progress">
+            <div class="roadmap__icon"><i class="fa-solid fa-spinner"></i></div>
+            <div class="roadmap__content">
+              <span class="roadmap__status roadmap__status--progress">Em andamento</span>
+              <h3>Fundamentos de Back-End</h3>
+              <p>
+                Estudando HTTP, APIs, rotas e conexão com banco de dados, ainda em exemplos
+                didáticos e projetos pequenos de prática.
+              </p>
+              <div class="roadmap__tags">
+                <span class="badge">HTTP</span>
+                <span class="badge">APIs</span>
+                <span class="badge">Node.js (iniciante)</span>
+              </div>
+              <div class="progress__bar">
+                <div class="progress__fill" style="width: 40%"></div>
+              </div>
+              <span class="progress__label">cerca de 40% do que planejo estudar nessa etapa</span>
+            </div>
+          </div>
+
+          <div class="roadmap__item roadmap__item--progress">
+            <div class="roadmap__icon"><i class="fa-solid fa-spinner"></i></div>
+            <div class="roadmap__content">
+              <span class="roadmap__status roadmap__status--progress">Em andamento</span>
+              <h3>SQL e Banco de Dados</h3>
+              <p>
+                Praticando consultas básicas e entendendo como modelar tabelas simples
+                para usar em futuros projetos.
+              </p>
+              <div class="roadmap__tags">
+                <span class="badge">SQL</span>
+                <span class="badge">PostgreSQL (iniciante)</span>
+              </div>
+              <div class="progress__bar">
+                <div class="progress__fill" style="width: 30%"></div>
+              </div>
+              <span class="progress__label">ainda no começo, mas evoluindo</span>
+            </div>
+          </div>
+
+          <div class="roadmap__item roadmap__item--planned">
+            <div class="roadmap__icon"><i class="fa-solid fa-clock"></i></div>
+            <div class="roadmap__content">
+              <span class="roadmap__status roadmap__status--planned">Planejado</span>
+              <h3>Primeiro CRUD completo</h3>
+              <p>Construir minha primeira API simples com criação, listagem, atualização e exclusão de dados.</p>
+              <div class="roadmap__tags">
+                <span class="badge">Node.js</span>
+                <span class="badge">API</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="roadmap__item roadmap__item--planned">
+            <div class="roadmap__icon"><i class="fa-solid fa-clock"></i></div>
+            <div class="roadmap__content">
+              <span class="roadmap__status roadmap__status--planned">Planejado</span>
+              <h3>Hospedar um projeto</h3>
+              <p>
+                Colocar um projeto simples no ar para entender melhor deploy e ambiente de produção.
+              </p>
+              <div class="roadmap__tags">
+                <span class="badge">Deploy</span>
+                <span class="badge">Git</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PLANOS DE PROJETOS -->
+    <section class="ideas">
+      <div class="container">
+        <h2 class="section__title">Planos de projetos</h2>
+        <p class="section__subtitle">Ideias que quero desenvolver para praticar</p>
+
+        <div class="ideas__grid">
+
+          <article class="idea__card">
+            <div class="idea__badge idea__badge--planned">Primeiro projeto</div>
+            <div class="idea__icon"><i class="fa-solid fa-list-check"></i></div>
+            <h3>Lista de Tarefas Simples</h3>
+            <p>
+              API básica para criar, listar e remover tarefas. Sem autenticação,
+              focada em entender CRUD e conexão com banco de dados.
+            </p>
+            <ul class="idea__features">
+              <li><i class="fa-regular fa-circle"></i> Rotas CRUD</li>
+              <li><i class="fa-regular fa-circle"></i> Status (feito / pendente)</li>
+              <li><i class="fa-regular fa-circle"></i> Persistência simples em banco</li>
+            </ul>
+            <div class="idea__tech">
+              <span class="badge">Node.js</span>
+              <span class="badge">SQL</span>
+            </div>
+          </article>
+
+          <article class="idea__card">
+            <div class="idea__badge idea__badge--planned">Estudo</div>
+            <div class="idea__icon"><i class="fa-solid fa-book"></i></div>
+            <h3>API de Estudos</h3>
+            <p>
+              Pequena API para registrar conteúdos estudados (curso, vídeo, livro) e
+              quanto tempo foi dedicado a cada um.
+            </p>
+            <ul class="idea__features">
+              <li><i class="fa-regular fa-circle"></i> Registro de conteúdo</li>
+              <li><i class="fa-regular fa-circle"></i> Campos de data / duração</li>
+              <li><i class="fa-regular fa-circle"></i> Filtros por tipo de conteúdo</li>
+            </ul>
+            <div class="idea__tech">
+              <span class="badge">Python</span>
+            </div>
+          </article>
+
+          <article class="idea__card">
+            <div class="idea__badge idea__badge--planned">Experimento</div>
+            <div class="idea__icon"><i class="fa-solid fa-cloud"></i></div>
+            <h3>Mini projeto publicado</h3>
+            <p>
+              Pegar um dos projetos simples acima e colocar no ar, para ter uma
+              primeira experiência com deploy e ambiente real.
+            </p>
+            <ul class="idea__features">
+              <li><i class="fa-regular fa-circle"></i> GitHub com código</li>
+              <li><i class="fa-regular fa-circle"></i> Deploy em serviço gratuito</li>
+              <li><i class="fa-regular fa-circle"></i> Readme explicando o projeto</li>
+            </ul>
+            <div class="idea__tech">
+              <span class="badge">Git</span>
+              <span class="badge">Deploy</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA GITHUB -->
+    <section class="github-cta">
+      <div class="container github-cta__inner">
+        <div>
+          <h2>Acompanhe meu progresso</h2>
+          <p>Mesmo sem projetos grandes ainda, estou versionando meus estudos e exercícios no GitHub.</p>
+        </div>
+        <a href="https://github.com/pedropelinca3112" target="_blank" class="btn btn--primary">
+          <i class="fa-brands fa-github"></i> Ver GitHub
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>Feito em Recife com <i class="fa-solid fa-heart"></i> por <strong>Pedro Pelinca</strong></p>
+      <div class="footer__links">
+        <a href="https://github.com/pedropelinca3112" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/pedro-pelinca-a230653b0" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/particles.js"></script>
+</body>
+</html>
